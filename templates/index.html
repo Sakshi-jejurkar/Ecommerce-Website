@@ -1,0 +1,119 @@
+{% extends 'base.html' %}
+
+{% block title %}  Home {% endblock title %}
+
+{% block body %}
+<style>
+  .custom-container {
+      height: 40%;
+      width: 80%;
+      background-color: lightgray;
+  }
+</style>
+
+<div class=container my-4 custom-container>
+  <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/static/Images/img8.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Naruto's IceCreams</h5>
+        <p>"Chill out with the coolest flavors in town!"</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/Images/img9.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p>"Scoop into happiness—one bite at a time!"</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="/static/Images/img10.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5></h5>
+        <p>"Turn any day into a treat with our irresistible ice cream!"</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+
+
+
+
+<div class="container my-3">
+  <h1 class="my-2 text-center">Select from the our range of IceCreams</h1>
+   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+          <img src="/static/Images/img5.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Dive into a world of flavor with our refreshing fruit ice cream, crafted from the freshest, juiciest ingredients</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">Rs.100</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/Images/img2.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Each swirl of our soft serve ice cream is a dreamy combination of smoothness and rich flavor, guaranteed to satisfy.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">Rs.90</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="/static/Images/img4.jpg" class="d-block w-100" alt="...">
+            <div class="card-body">
+              <p class="card-text">Experience pure bliss with our creamy soft serve, swirled to perfection and ready to delight your taste buds.</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-body-secondary">Rs.90</small>
+              </div>
+            </div>
+          </div>
+        </div>
+
+     
+      
+        
+
+        
+
+        
+      
+{% endblock body %}
+    
+        

@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block title %} Contact {% endblock title %}
+
+{% block body %}
+<style>
+    .custom-container {
+        height: 10%;
+        width: 50%;
+        background-color: lightgray;
+    }
+</style>
+
+<div class="container px-0 custom-container mb-3">
+    <img src="/static/Images/con1.jpg" class="d-block w-100 mx-0 " alt="...">
+    <h3 style="text-align: center;">Contact Us</h3>
+</div>
+
+
+
+
+
+
+
+
+<div class="container mb-3 py-4" >
+    <form method="post" action="/contact">
+         {% csrf_token %}
+        <div class="mb-3">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="enter your name">
+          </div>
+
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email"name="email" placeholder="enter your mail">
+          </div>
+
+          <div class="mb-3">
+            <label for="Phone no" class="form-label">Phone no</label>
+            <input type="text" class="form-control" id="phone"  name="phone" placeholder="enter your phone no">
+          </div>
+
+          <div class="mb-3">
+            <label for="desc" class="form-label">Tell me about you want to contact me for....</label>
+            <textarea class="form-control" id="desc" rows="3" name="desc" placeholder="enter your services"></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+
+</div>
+
+
+
+{% endblock body %}

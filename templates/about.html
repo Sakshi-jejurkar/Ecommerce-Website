@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}  About {% endblock title %}
+
+{% block body %}
+
+<style>
+    .about-container {
+        background-color: #f8f9fa; /* Light gray background */
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        color: #ff6347; /* Tomato color */
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        color: #333;
+        margin-top: 30px;
+    }
+
+    p {
+        color: #555;
+    }
+
+    .team-member {
+        transition: transform 0.3s;
+    }
+
+    .team-member:hover {
+        transform: scale(1.05); /* Slight zoom on hover */
+    }
+
+    .team-member img {
+        border-radius: 50%; /* Circular images for team members */
+        margin-bottom: 15px;
+    }
+
+    .contact-info {
+        margin-top: 40px;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #fff; /* White background for info box */
+    }
+
+    .social-media a {
+        color: #ff6347; /* Social media links color */
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    .social-media a:hover {
+        text-decoration: underline;
+    }
+</style>
+
+<div class="container mt-5">
+    <h1 class="text-center">Naruto's Ice-Cream Shop</h1>
+    <p class="lead text-center">Satisfying your sweet tooth with the finest ice creams!</p>
+
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <h2>Our Story</h2>
+            <p>Founded in 2021, our ice cream shop has been dedicated to crafting delicious, high-quality ice cream using only the freshest ingredients. We believe in creating joy in every scoop!</p>
+        </div>
+        <div class="col-md-6">
+            <h2>Our Values</h2>
+            <p>We prioritize sustainability, community support, and exceptional customer service. Our mission is to bring people together through the love of ice cream.</p>
+        </div>
+    </div>
+
+    
+          
+
+    
+
+    <div class="mt-5 text-center">
+        <h2>Contact Us</h2>
+        <p>We would love to hear from you!</p>
+        <p><strong>Address:</strong> 123 Ice Cream Lane, Sweet Town, ST 12345</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> <a href="mailto:info@icecreamshop.com">info@icecreamshop.com</a></p>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank">Facebook</a> |
+            <a href="https://instagram.com" target="_blank">Instagram</a> |
+            <a href="https://twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock body %}
+    
+        
